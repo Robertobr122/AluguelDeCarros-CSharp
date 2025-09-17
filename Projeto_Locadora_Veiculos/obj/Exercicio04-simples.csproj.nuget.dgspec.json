@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rober\\Desktop\\Roberto\\SMN\\Atividades\\C# POO\\modulo-csharp-poo\\Resolucoes\\AtividadesPOO\\Exercicio04-simples\\Exercicio04-simples.csproj": {}
+    "C:\\Users\\rober\\Desktop\\Roberto\\ATIVIDADES\\C#\\MiniProjetos\\Locadora Veiculo\\Projeto_Locadora_Veiculos\\Exercicio04-simples.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rober\\Desktop\\Roberto\\SMN\\Atividades\\C# POO\\modulo-csharp-poo\\Resolucoes\\AtividadesPOO\\Exercicio04-simples\\Exercicio04-simples.csproj": {
+    "C:\\Users\\rober\\Desktop\\Roberto\\ATIVIDADES\\C#\\MiniProjetos\\Locadora Veiculo\\Projeto_Locadora_Veiculos\\Exercicio04-simples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Desktop\\Roberto\\SMN\\Atividades\\C# POO\\modulo-csharp-poo\\Resolucoes\\AtividadesPOO\\Exercicio04-simples\\Exercicio04-simples.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\Desktop\\Roberto\\ATIVIDADES\\C#\\MiniProjetos\\Locadora Veiculo\\Projeto_Locadora_Veiculos\\Exercicio04-simples.csproj",
         "projectName": "Exercicio04-simples",
-        "projectPath": "C:\\Users\\rober\\Desktop\\Roberto\\SMN\\Atividades\\C# POO\\modulo-csharp-poo\\Resolucoes\\AtividadesPOO\\Exercicio04-simples\\Exercicio04-simples.csproj",
+        "projectPath": "C:\\Users\\rober\\Desktop\\Roberto\\ATIVIDADES\\C#\\MiniProjetos\\Locadora Veiculo\\Projeto_Locadora_Veiculos\\Exercicio04-simples.csproj",
         "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Desktop\\Roberto\\SMN\\Atividades\\C# POO\\modulo-csharp-poo\\Resolucoes\\AtividadesPOO\\Exercicio04-simples\\obj\\",
+        "outputPath": "C:\\Users\\rober\\Desktop\\Roberto\\ATIVIDADES\\C#\\MiniProjetos\\Locadora Veiculo\\Projeto_Locadora_Veiculos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

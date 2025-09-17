@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="image/AlugaCar.png" alt="Descrição da Imagem" width="400"/>
-</div>
-
 # Sistema de Locadora de Veículos - AluCar 🚗
 
 ### **Descrição**
