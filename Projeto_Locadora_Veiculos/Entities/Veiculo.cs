@@ -14,33 +14,33 @@ public abstract class Veiculo
 
     public Veiculo()
     { }
-public virtual void SetCategoriaCnh(string tipoCategoriaCnh)
-{
-    if (string.IsNullOrWhiteSpace(tipoCategoriaCnh))
+    public virtual void SetCategoriaCnh(string tipoCategoriaCnh)
     {
-        throw new FormatException("Erro: A CNH não pode ser vazia");
+        if (string.IsNullOrWhiteSpace(tipoCategoriaCnh))
+        {
+            throw new FormatException("Erro: A CNH não pode ser vazia");
+        }
+        TipoCategoriaCnh = tipoCategoriaCnh.ToUpper(); // Adicionar esta linha
     }
-    TipoCategoriaCnh = tipoCategoriaCnh.ToUpper(); // Adicionar esta linha
-}
 
-   public void SetPlaca(string placa)
-{
-    if (string.IsNullOrWhiteSpace(placa) || !Regex.IsMatch(placa, @"^[aA-zZ-Z0-9]+$"))
+    public void SetPlaca(string placa)
     {
-        throw new FormatException("ERRO: O valor deve conter apenas letras e numeros e não pode ser nulo.");
+        if (string.IsNullOrWhiteSpace(placa) || !Regex.IsMatch(placa, @"^[aA-zZ-Z0-9]+$"))
+        {
+            throw new FormatException("ERRO: O valor deve conter apenas letras e numeros e não pode ser nulo.");
+        }
+        Placa = placa.ToUpper();
     }
-    Placa = placa.ToUpper(); 
-}
     public void SetModelo(string modelo)
-{
-    if (string.IsNullOrWhiteSpace(modelo) || !Regex.IsMatch(modelo, @"^[aA-zZ-Z0-9\s]+$"))
     {
-        throw new FormatException("ERRO: O valor deve conter apenas letras e numeros e não pode ser nulo.");
+        if (string.IsNullOrWhiteSpace(modelo) || !Regex.IsMatch(modelo, @"^[aA-zZ-Z0-9\s]+$"))
+        {
+            throw new FormatException("ERRO: O valor deve conter apenas letras e numeros e não pode ser nulo.");
+        }
+        Modelo = modelo;
     }
-    Modelo = modelo; 
-}
 
-     public void SetDiariaBase(string diariaBase)
+    public void SetDiariaBase(string diariaBase)
     {
         try
         {

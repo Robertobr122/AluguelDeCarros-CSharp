@@ -90,15 +90,16 @@ public class Reserva
     }
 
     public decimal CalcularValor(bool incluirSeguroOpcional)
-{
-    decimal valorBase = Veiculo.CalcularDiaria(Dias().ToString(), Veiculo.DiariaBase.ToString());
-    
-    if (incluirSeguroOpcional)
-        valorBase *= 1.1m;
+    {
+        decimal valorBase = Veiculo.CalcularDiaria(Dias().ToString(), Veiculo.DiariaBase.ToString());
 
-    if (CondutorAdicional)
-        valorBase *= 1.05m; 
+        if (incluirSeguroOpcional)
+            valorBase *= 1.1m;
 
-    return valorBase;
+        if (CondutorAdicional)
+            valorBase *= 1.05m;
+
+        return valorBase;
+    }
 }
-}
+

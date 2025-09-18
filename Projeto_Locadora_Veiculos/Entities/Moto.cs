@@ -9,7 +9,7 @@ public class Moto : Veiculo
     {
     }
 
-   public override void SetCategoriaCnh(string TipoCategoriaCnh)
+    public override void SetCategoriaCnh(string TipoCategoriaCnh)
     {
         base.SetCategoriaCnh(TipoCategoriaCnh);
         if (!Regex.IsMatch(TipoCategoriaCnh, @"^[aA]+$"))
@@ -35,4 +35,3 @@ public class Moto : Veiculo
 
 
 }
-

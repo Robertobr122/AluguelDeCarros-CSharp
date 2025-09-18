@@ -23,31 +23,31 @@ public class Cliente
     }
 
     public void SetNome(string nome)
-{
-    if (string.IsNullOrWhiteSpace(nome))
     {
-        throw new FormatException("ERRO: O nome não pode ser vazio.");
-    }
+        if (string.IsNullOrWhiteSpace(nome))
+        {
+            throw new FormatException("ERRO: O nome não pode ser vazio.");
+        }
 
-    if (!Regex.IsMatch(nome, @"^[aA-zZ\s]+$"))
-    {
-        throw new FormatException("ERRO: O nome deve conter apenas letras");
+        if (!Regex.IsMatch(nome, @"^[aA-zZ\s]+$"))
+        {
+            throw new FormatException("ERRO: O nome deve conter apenas letras");
+        }
+        Nome = nome;
     }
-    Nome = nome; 
-}
 
 
     public void SetIdade(string idade)
-{
-    try
     {
-        int IdadeFormatada = int.Parse(idade);
-        if (IdadeFormatada <= 21)
+        try
         {
-            throw new ArgumentException("ERRO: A idade deve ser maior ou igual a 21 anos");
+            int IdadeFormatada = int.Parse(idade);
+            if (IdadeFormatada <= 21)
+            {
+                throw new ArgumentException("ERRO: A idade deve ser maior ou igual a 21 anos");
+            }
+            Idade = IdadeFormatada;
         }
-        Idade = IdadeFormatada; 
-    }
         catch (Exception erro)
         {
             if (erro is ArgumentException)
@@ -60,11 +60,11 @@ public class Cliente
     }
 
     public void SetCategoriaCnh(string categoriaCnh)
-{
-    if (string.IsNullOrWhiteSpace(categoriaCnh) || !Regex.IsMatch(categoriaCnh, @"^[aA-cC]+$"))
     {
-        throw new FormatException("Erro: A CNH deve ser A, B, ou C");
+        if (string.IsNullOrWhiteSpace(categoriaCnh) || !Regex.IsMatch(categoriaCnh, @"^[aA-cC]+$"))
+        {
+            throw new FormatException("Erro: A CNH deve ser A, B, ou C");
+        }
+        CategoriaCnh = categoriaCnh.ToUpper(); // Adicionar esta linha
     }
-    CategoriaCnh = categoriaCnh.ToUpper(); // Adicionar esta linha
-}
 }

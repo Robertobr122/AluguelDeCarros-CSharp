@@ -7,10 +7,10 @@ public class Carro : Veiculo
 
     public Carro()
     {
-        
+
     }
 
-   public override void SetCategoriaCnh(string TipoCategoriaCnh)
+    public override void SetCategoriaCnh(string TipoCategoriaCnh)
     {
         base.SetCategoriaCnh(TipoCategoriaCnh);
         if (!Regex.IsMatch(TipoCategoriaCnh, @"^[bBcC]+$"))
@@ -44,4 +44,3 @@ public class Carro : Veiculo
 
 
 }
-
